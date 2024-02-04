@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <title>Gym guy</title>
+</head>
+<style>
+  .slideImage {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    filter: brightness(70%);
+
+  }
+
+  .slideImage img {
+    border-radius: 70%;
+    float: right;
+    width: 27em !important;
+    height: 27em;
+    object-fit: cover;
+    box-shadow: inset 0px 0px 20px 10px #000;
+
+  }
+
+  .project-content .li {
+    width: 190% !important;
+  }
+
+  @media(max-width:600px) {
+    .edu {
+      width: 80% !important;
+      margin-top: 10px;
+    }
+
+    iframe {
+      width: 100% !important;
+      height: auto;
+    }
+
+    .iit {
+      margin-top: 27px;
+    }
+
+    .project-content .li {
+      width: 100% !important;
+    }
+  }
+
+  .edu {
+    width: 120px;
+    background-color: var(--primary);
+    border-radius: 28px;
+    padding: 12px 24px;
+    color: black !important;
+    font-weight: 500 !important;
+  }
+
+  .fatLoss_gym {
+    display: none;
+  }
+
+  .cutting_gym {
+    display: none;
+  }
+
+  .bulking_gym {
+    display: none;
+  }
+
+  .fatLoss_gym_exercise{
+    display: none;
+  }
+  .cutting_gym_exercise{
+    display: none;
+  }
+  .bulking_gym_exercise{
+    display: none;
+  }
+</style>
+
+
+
+<body class="body-dark">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <header id="top">
+    <a class="header-title" href="#" style="color:white;">YOU DON'N KNOW ME SON !</a>
+    <nav>
+      <ul>
+        <!-- <li>
+          <a href="#project" class="link">Projects</a>
+        </li>
+        <li>
+          <a href="#stack" class="link">Skills</a>
+        </li> -->
+        <li>
+          <a href="#contact" class="link">Contact</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+
+
+
+  <div class="project-container" style="padding: 20px;background-color: black;justify-content: center;width: 100%;">
+
+    <div class="fatLoss" style="margin-right: 14px;cursor: pointer;">
+      <h2 style="color: #ffdd00;text-align:left;position:absolute;margin-left:1em;margin-top: 13em;z-index: 102;">
+        FAT <br> LOSS
+      </h2>
+      <img src="fatLoss.jpg" alt="Fat Loss" height="450" width="295" style="object-fit: cover;opacity: 0.5;" />
+    </div>
+
+    <div class="cutting" style="cursor: pointer;">
+      <h2 style="color: #ffdd00;text-align:left;position:absolute;margin-left:1em;margin-top: 13em;z-index: 102;">
+        SHREDDING <br> CUTTING
+      </h2>
+      <img src="shredding.jpg" alt="Shredding" height="450" width="295" style="object-fit: cover;opacity: 0.5;" />
+    </div>
+
+    <div class="bulking" style="margin-left: 14px;cursor: pointer;">
+      <h2 style="color: #ffdd00;text-align:left;position:absolute;margin-left:1em;margin-top: 13em;z-index: 102;">
+        BULKING<br>WEIGHT GAIN
+      </h2>
+      <img src="Bulking.jpg" alt="Bulking" height="450" width="295" style="object-fit: cover;opacity: 0.5;" />
+    </div>
+
+
+
+
+  </div>
+
+
+  <section id="project" class="project fatLoss_gym" style="margin-top:2em;">
+    <h2 class="section-title">Fat loss</h2>
+
+
+    <div style="justify-content: center;text-align: center;">
+
+      <button class="edu fatLossMonday" style="color:white;">Monday</button>
+      <button class="edu fatLossTuesday" style="color:white;">Tuesday</button>
+      <button class="edu fatLossWednesday" style="color:white;">Wednesday</button>
+      <button class="edu fatLossThursday" style="color:white;">Thursday</button>
+      <button class="edu fatLossFriday" style="color:white;">Friday</button>
+      <button class="edu fatLossSaturday" style="color:white;">Saturday</button>
+      <button class="edu fatLossSunday" style="color:white;">Sunday</button>
+
+
+    </div>
+
+  </section>
+
+  <section id="project" class="project cutting_gym" style="margin-top:2em;">
+    <h2 class="section-title">cutting</h2>
+
+
+    <div style="justify-content: center;text-align: center;">
+
+      <button class="edu cuttingMonday" style="color:white;">Monday</button>
+      <button class="edu cuttingTuesday" style="color:white;">Tuesday</button>
+      <button class="edu cuttingWednesday" style="color:white;">Wednesday</button>
+      <button class="edu cuttingThursday" style="color:white;">Thursday</button>
+      <button class="edu cuttingFriday" style="color:white;">Friday</button>
+      <button class="edu cuttingSaturday" style="color:white;">Saturday</button>
+      <button class="edu cuttingSunday" style="color:white;">Sunday</button>
+
+    </div>
+
+  </section>
+
+  <section id="project" class="project bulking_gym" style="margin-top:2em;">
+    <h2 class="section-title">Bulkin & weight gain</h2>
+
+
+    <div style="justify-content: center;text-align: center;">
+      <button class="edu bulkingMonday" style="color:white;">Monday</button>
+      <button class="edu bulkingTuesday" style="color:white;">Tuesday</button>
+      <button class="edu bulkingWednesday" style="color:white;">Wednesday</button>
+      <button class="edu bulkingThursday" style="color:white;">Thursday</button>
+      <button class="edu bulkingFriday" style="color:white;">Friday</button>
+      <button class="edu bulkingSaturday" style="color:white;">Saturday</button>
+      <button class="edu bulkingSunday" style="color:white;">Sunday</button>
+
+    </div>
+
+  </section>
+
+  <section id="project" class="project fatLoss_gym_exercise" style="margin-top:2em;">
+    <!-- <h2 class="section-title">chest day</h2> -->
+    <div class="project-container">
+      <div class="fatloss_video1">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit fatloss_content1">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="fatloss_video2">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit fatloss_content2">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="fatloss_video3">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit fatloss_content3">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="fatloss_video4">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit fatloss_content4">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="fatloss_video5">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit fatloss_content5">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+    <div class="project-container">
+      <div class="fatloss_video6">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit fatloss_content6">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="fatloss_video7">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit fatloss_content7">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="fatloss_video8">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit fatloss_content8">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+
+  <section id="project" class="project cutting_gym_exercise" style="margin-top:2em;">
+    <!-- <h2 class="section-title">chest day</h2> -->
+    <div class="project-container">
+      <div class="cutting_video1">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit cutting_content1">
+        <h3 style="text-align:left;">cutting-Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="cutting_video2">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit cutting_content2">
+        <h3 style="text-align:left;">cutting-Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="cutting_video3">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit cutting_content3">
+        <h3 style="text-align:left;">cutting-Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="cutting_video4">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit cutting_content4">
+        <h3 style="text-align:left;">cutting-Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="cutting_video5">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit cutting_content5">
+        <h3 style="text-align:left;">cutting-Chest</h3>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="project" class="project bulking_gym_exercise" style="margin-top:2em;">
+    <!-- <h2 class="section-title">chest day</h2> -->
+    <div class="project-container">
+      <div class="bulking_video1">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit bulking_content1">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="bulking_video2">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit bulking_content2">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="bulking_video3">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit bulking_content3">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="bulking_video4">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit bulking_content4">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="bulking_video5">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit bulking_content5">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get in touch</h2>
+
+    <ul>
+      <li>
+        <a href="mailto:adityachow1011@gmail.com">
+          <span class="btn">
+            <i aria-hidden="true" class="fas icon fa-envelope"></i>Email
+          </span>
+        </a>
+      </li>
+
+      <!-- <li>
+                <a href="https://github.com/adityachow1011" aria-label="Github">
+                    <span class="btn">
+                        <i aria-hidden="true" class="fab icon fa-github"></i>
+                        Github
+                    </span>
+                </a>
+            </li> -->
+
+      <!-- <li>
+        <a href="" aria-label="Linkedin">
+          <span class="btn">
+            <i aria-hidden="true" class="fab icon fa-linkedin"></i>
+            Linkedin
+          </span>
+        </a>
+      </li> -->
+
+    </ul>
+  </section>
+
+  <footer style="text-align: center;justify-content: center;">
+    <small>&copy; A D I T Y A  C H O W D H A R Y , +91 8617897583, adityachow1011@gmail.com</small>
+  </footer>
+
+  <div class="scroll-container">
+    <div aria-label="Scroll up" class="scroll-up">
+      <a href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+</body>
+<script>
+  function myFunction() {
+    $("#toggle").slideToggle();
+    //   var x = document.getElementById("toggle");
+    //   if (x.style.display === "none") {
+    //     x.style.display = "block";
+    //   } else {
+    //     x.style.display = "none";
+    //   }
+  }
+  function myFunctions() {
+    $("#toggles").slideToggle();
+    //   var x = document.getElementById("toggle");
+    //   if (x.style.display === "none") {
+    //     x.style.display = "block";
+    //   } else {
+    //     x.style.display = "none";
+    //   }
+  }
+
+  $(".fatLoss").click(function () {
+
+    $(".cutting_gym").hide();
+    $(".bulking_gym").hide();
+    $(".fatLoss_gym").slideToggle();
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").hide();
+  });
+
+  $(".cutting").click(function () {
+    $(".cutting_gym").slideToggle();
+    $(".bulking_gym").hide();
+    $(".fatLoss_gym").hide();
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").hide();
+  });
+
+  $(".bulking").click(function () {
+    $(".cutting_gym").hide();
+    $(".bulking_gym").slideToggle();
+    $(".fatLoss_gym").hide();
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").hide();
+  });
+
+  // day separation
+
+  //fatLoss
+  $(".fatLossMonday").click(function () {
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").show();
+    $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dmcV5fpFoUo"></iframe>');
+    $(".fatloss_content1").html('<h3 style="text-align:left;">Cardio-Treadmill</h3><br>');
+
+    $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/sGeDGL47O-o"></iframe>');
+    $(".fatloss_content2").html('<h3 style="text-align:left;">Cross Trainer Machine</h3>');
+
+    $(".fatloss_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/5uB0KaoCF9w"></iframe>');
+    $(".fatloss_content3").html('<h3 style="text-align:left;">Leg raises</h3>');
+
+    $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/nKQyGwQJDm4"></iframe>');
+    $(".fatloss_content4").html('<h3 style="text-align:left;">Crunches</h3>');
+
+    $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/FrFyUbxs1uQ"></iframe>');
+    $(".fatloss_content5").html('<h3 style="text-align:left;">Side Crunches</h3>');
+
+    $(".fatloss_video6").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/07Bcqtib4FM"></iframe>');
+    $(".fatloss_content6").html('<h3 style="text-align:left;">Inclined Dumbell Press or Barbell Press</h3>');
+
+    $(".fatloss_video7").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/ZOwwBk642SI"></iframe>');
+    $(".fatloss_content7").html('<h3 style="text-align:left;">Flat Dumbell Press or barbell press</h3>');
+
+    $(".fatloss_video8").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/Z57CtFmRMxA"></iframe>');
+    $(".fatloss_content8").html('<h3 style="text-align:left;">Machine Fly or Dumbell Fly </h3>');
+  });
+
+  $(".fatLossTuesday").click(function () {
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").show();
+    $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dmcV5fpFoUo"></iframe>');
+    $(".fatloss_content1").html('<h3 style="text-align:left;">Cardio-Treadmill</h3><br>');
+
+    $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/sGeDGL47O-o"></iframe>');
+    $(".fatloss_content2").html('<h3 style="text-align:left;">Cross Trainer Machine</h3>');
+
+    $(".fatloss_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/5uB0KaoCF9w"></iframe>');
+    $(".fatloss_content3").html('<h3 style="text-align:left;">Leg raises</h3>');
+
+    $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/nKQyGwQJDm4"></iframe>');
+    $(".fatloss_content4").html('<h3 style="text-align:left;">Crunches</h3>');
+
+    $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/FrFyUbxs1uQ"></iframe>');
+    $(".fatloss_content5").html('<h3 style="text-align:left;">Side Crunches</h3>');
+
+    $(".fatloss_video6").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/BdqzYZmL2Bc"></iframe>');
+    $(".fatloss_content6").html('<h3 style="text-align:left;">Skull crusher</h3>');
+
+    $(".fatloss_video7").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/7cy_rXDTF7w"></iframe>');
+    $(".fatloss_content7").html('<h3 style="text-align:left;">Tricep Pushdown</h3>');
+
+    $(".fatloss_video8").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/kDbUNTX-Xts"></iframe>');
+    $(".fatloss_content8").html('<h3 style="text-align:left;">Overhead Tricep</h3>');
+
+   
+  });
+
+  $(".fatLossWednesday").click(function () {
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").slideToggle();
+    $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content1").html('<h3 style="text-align:left;">backkkk</h3>');
+
+    $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+
+    $(".fatloss_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+
+    $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+
+    $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+  });
+  $(".fatLossThursday").click(function () {
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").slideToggle();
+    $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content1").html('<h3 style="text-align:left;">Biceppppp</h3>');
+
+    $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+
+    $(".fatloss_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+
+    $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+
+    $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+  });
+
+  $(".fatLossFriday").click(function () {
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").slideToggle();
+    $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content1").html('<h3 style="text-align:left;">shoulder</h3>');
+
+    $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+
+    $(".fatloss_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+
+    $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+
+    $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+  });
+
+
+  $(".fatLossSaturday").click(function () {
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").slideToggle();
+    $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content1").html('<h3 style="text-align:left;">Leg</h3>');
+
+    $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+
+    $(".fatloss_video3").html('<iframe  height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+
+    $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+
+    $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".fatloss_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+  });
+
+
+
+
+//cutting
+   
+$(".cuttingMonday").click(function () {
+    $(".cutting_gym_exercise").slideToggle();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").hide();
+    $(".cutting_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content1").html('<h3 style="text-align:left;">cut-Cardio</h3>');
+
+    $(".cutting_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content2").html('<h3 style="text-align:left;">Incline</h3>');
+
+    $(".cutting_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content3").html('<h3 style="text-align:left;">Declined</h3>');
+
+    $(".cutting_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content4").html('<h3 style="text-align:left;">fly</h3>');
+
+    $(".cutting_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content5").html('<h3 style="text-align:left;">cable</h3>');
+  });
+
+  $(".cuttingTuesday").click(function () {
+    $(".cutting_gym_exercise").slideToggle();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").hide() ;
+    $(".cutting_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content1").html('<h3 style="text-align:left;">triceppp</h3>');
+
+    $(".cutting_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+
+    $(".cutting_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+
+    $(".cutting_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+
+    $(".cutting_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+  });
+
+  $(".cuttingWednesday").click(function () {
+    $(".cutting_gym_exercise").slideToggle();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").hide() ;
+    $(".cutting_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content1").html('<h3 style="text-align:left;">backkkk</h3>');
+
+    $(".cutting_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+
+    $(".cutting_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+
+    $(".cutting_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+
+    $(".cutting_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+  });
+  $(".cuttingThursday").click(function () {
+    $(".cutting_gym_exercise").slideToggle();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").hide() ;
+    $(".cutting_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content1").html('<h3 style="text-align:left;">Biceppppp</h3>');
+
+    $(".cutting_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+
+    $(".cutting_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+
+    $(".cutting_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+
+    $(".cutting_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+  });
+
+  $(".cuttingFriday").click(function(){
+    $(".cutting_gym_exercise").slideToggle();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").hide() ;
+    $(".cutting_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content1").html('<h3 style="text-align:left;">shoulder</h3>');
+
+    $(".cutting_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+
+    $(".cutting_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+
+    $(".cutting_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+
+    $(".cutting_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+  });
+
+
+  $(".cuttingSaturday").click(function () {
+    $(".cutting_gym_exercise").slideToggle();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").hide() ;
+    $(".cutting_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content1").html('<h3 style="text-align:left;">Leg</h3>');
+
+    $(".cutting_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+
+    $(".cutting_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+
+    $(".cutting_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+
+    $(".cutting_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".cutting_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+  });
+
+
+
+
+
+
+//Bulking
+   
+$(".bulkingMonday").click(function () {
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").slideToggle();
+    $(".fatLoss_gym_exercise").hide();
+    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content1").html('<h3 style="text-align:left;">Bulk-Cardio</h3>');
+
+    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content2").html('<h3 style="text-align:left;">Incline</h3>');
+
+    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content3").html('<h3 style="text-align:left;">Declined</h3>');
+
+    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content4").html('<h3 style="text-align:left;">fly</h3>');
+
+    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content5").html('<h3 style="text-align:left;">cable</h3>');
+  });
+
+  $(".bulkingTuesday").click(function () {
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").slideToggle();
+    $(".fatLoss_gym_exercise").hide();
+    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content1").html('<h3 style="text-align:left;">triceppp</h3>');
+
+    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+
+    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+
+    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+
+    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+  });
+
+  $(".bulkingWednesday").click(function () {
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").slideToggle();
+    $(".fatLoss_gym_exercise").hide();
+    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content1").html('<h3 style="text-align:left;">backkkk</h3>');
+
+    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+
+    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+
+    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+
+    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+  });
+  $(".bulkingThursday").click(function () {
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").slideToggle();
+    $(".fatLoss_gym_exercise").hide();
+    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content1").html('<h3 style="text-align:left;">Biceppppp</h3>');
+
+    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content2").html('<h3 style="text-align:left;">Biceppppp</h3>');
+    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+
+    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+
+    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+  });
+
+  $(".bulkingFriday").click(function(){
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").slideToggle();
+    $(".fatLoss_gym_exercise").hide();
+    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content1").html('<h3 style="text-align:left;">shoulder</h3>');
+
+    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+
+    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+
+    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+
+    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+  });
+
+
+  $(".bulkingSaturday").click(function () {
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").slideToggle();
+    $(".fatLoss_gym_exercise").hide();
+    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content1").html('<h3 style="text-align:left;">Leg</h3>');
+
+    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+
+    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+
+    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+
+    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
+    $(".bulking_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+  });
+</script>
