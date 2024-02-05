@@ -36,8 +36,12 @@
   }
 
   @media(max-width:600px) {
+    ul{
+      width: 100% !important;
+      font-size: 10px !important;
+    }
     .edu {
-      width: 80% !important;
+      width: 42% !important;
       margin-top: 10px;
     }
 
@@ -85,6 +89,9 @@
   .bulking_gym_exercise{
     display: none;
   }
+  .sundayContent{
+    display: none;
+  }
 </style>
 
 
@@ -124,12 +131,12 @@
       <img src="fatLoss.jpg" alt="Fat Loss" height="450" width="295" style="object-fit: cover;opacity: 0.5;" />
     </div>
 
-    <div class="cutting" style="cursor: pointer;">
+    <!-- <div class="cutting" style="cursor: pointer;">
       <h2 style="color: #ffdd00;text-align:left;position:absolute;margin-left:1em;margin-top: 13em;z-index: 102;">
         SHREDDING <br> CUTTING
       </h2>
       <img src="shredding.jpg" alt="Shredding" height="450" width="295" style="object-fit: cover;opacity: 0.5;" />
-    </div>
+    </div> -->
 
     <div class="bulking" style="margin-left: 14px;cursor: pointer;">
       <h2 style="color: #ffdd00;text-align:left;position:absolute;margin-left:1em;margin-top: 13em;z-index: 102;">
@@ -143,11 +150,25 @@
 
   </div>
 
+  
 
   <section id="project" class="project fatLoss_gym" style="margin-top:2em;">
     <h2 class="section-title">Fat loss</h2>
 
-
+    <div class="project-container">
+      <div class="project-content iit ">
+        <h3 style="text-align:left;">Tips to remember</h3><br>
+        <ul style="text-align:left;width: 800px;">
+          <li>- Focus on both cardio as well as weight training.</li>
+          <li>- Cardio time must be little bit greater than weight training time.</li>
+          <li>- Avoid eating junk food and try to eat clean homemade and self cooked food.</li>
+          <li>- Decrease the amount of daily calories intake and take healthy carbs and fiber.</li>
+          <li>- Try to take protein as per your body weight.</li>
+  
+        </ul>
+      </div>
+    </div>
+  
     <div style="justify-content: center;text-align: center;">
 
       <button class="edu fatLossMonday" style="color:white;">Monday</button>
@@ -156,7 +177,7 @@
       <button class="edu fatLossThursday" style="color:white;">Thursday</button>
       <button class="edu fatLossFriday" style="color:white;">Friday</button>
       <button class="edu fatLossSaturday" style="color:white;">Saturday</button>
-      <button class="edu fatLossSunday" style="color:white;">Sunday</button>
+      <button class="edu fatLossSunday sundayBtn" style="color:white;">Sunday</button>
 
 
     </div>
@@ -175,14 +196,31 @@
       <button class="edu cuttingThursday" style="color:white;">Thursday</button>
       <button class="edu cuttingFriday" style="color:white;">Friday</button>
       <button class="edu cuttingSaturday" style="color:white;">Saturday</button>
-      <button class="edu cuttingSunday" style="color:white;">Sunday</button>
+      <button class="edu cuttingSunday sundayBtn" style="color:white;">Sunday</button>
 
     </div>
 
   </section>
 
   <section id="project" class="project bulking_gym" style="margin-top:2em;">
-    <h2 class="section-title">Bulkin & weight gain</h2>
+    <h2 class="section-title">Bulking & weight gain</h2>
+
+    <div class="project-container">
+      <div class="project-content iit ">
+        <h3 style="text-align:left;">Tips to remember</h3><br>
+        <ul style="text-align:left;width: 800px;">
+          <li>- 8 to 12 rep for 4 sets till muscle failure</li>
+          <li>- rest time - near to 2mins between each sets</li>
+          <li>- focus on warmup exercise to make the body ready for heavy weights(dynamic streaching).</li>
+          <li>- focus on warm up sets(4-6 reps) before doing actual sets.</li>
+          <li>- Try to increase load in every set without changing the rest time duration.</li>
+          <li>- Posing between sets to increase the training intensity and to establish mind & muscle connection.</li>
+          <li>- Take sip of water after every sets(BCAA or glucose) to keep the body hydrated.</li>
+          <li>- Cool down streaching exercise for muscle flexibility after whole workout</li>
+          <li>- After training take protein to get amino acids asap.</li>
+        </ul>
+      </div>
+    </div>
 
 
     <div style="justify-content: center;text-align: center;">
@@ -192,16 +230,23 @@
       <button class="edu bulkingThursday" style="color:white;">Thursday</button>
       <button class="edu bulkingFriday" style="color:white;">Friday</button>
       <button class="edu bulkingSaturday" style="color:white;">Saturday</button>
-      <button class="edu bulkingSunday" style="color:white;">Sunday</button>
+      <button class="edu bulkingSunday sundayBtn" style="color:white;">Sunday</button>
 
     </div>
 
   </section>
 
+  <section id="project" class="project sundayContent" style="margin-top:2em;">
+    <h2 style="text-align: center;">ENJOYYYY AND DONT EAT CHEAT MEALS</h2>
+  </section>
+
   <section id="project" class="project fatLoss_gym_exercise" style="margin-top:2em;">
     <!-- <h2 class="section-title">chest day</h2> -->
+
+    
+
     <div class="project-container">
-      <div class="fatloss_video1">
+      <div class="fatloss_video1" >
         <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
           src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
       </div>
@@ -219,6 +264,8 @@
 
       <div class="project-content iit fatloss_content2">
         <h3 style="text-align:left;">Chest</h3>
+        
+        
       </div>
     </div>
 
@@ -355,6 +402,9 @@
 
   <section id="project" class="project bulking_gym_exercise" style="margin-top:2em;">
     <!-- <h2 class="section-title">chest day</h2> -->
+
+    
+
     <div class="project-container">
       <div class="bulking_video1">
         <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
@@ -406,6 +456,50 @@
       </div>
 
       <div class="project-content iit bulking_content5">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="bulking_video6">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit bulking_content6">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="bulking_video7">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit bulking_content7">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="bulking_video8">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit bulking_content8">
+        <h3 style="text-align:left;">Chest</h3>
+      </div>
+    </div>
+
+    <div class="project-container">
+      <div class="bulking_video9">
+        <iframe height="250" width="450" style="object-fit: cover;border-radius: 10px;"
+          src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>
+      </div>
+
+      <div class="project-content iit bulking_content9">
         <h3 style="text-align:left;">Chest</h3>
       </div>
     </div>
@@ -480,6 +574,13 @@
     //   }
   }
 
+  $(".sundayBtn").click(function(){
+    $(".sundayContent").slideToggle();
+    $(".cutting_gym_exercise").hide();
+    $(".bulking_gym_exercise").hide();
+    $(".fatLoss_gym_exercise").hide();
+  });
+
   $(".fatLoss").click(function () {
 
     $(".cutting_gym").hide();
@@ -512,143 +613,192 @@
 
   //fatLoss
   $(".fatLossMonday").click(function () {
+    $(".sundayContent").hide();
+
     $(".cutting_gym_exercise").hide();
     $(".bulking_gym_exercise").hide();
     $(".fatLoss_gym_exercise").show();
     $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dmcV5fpFoUo"></iframe>');
-    $(".fatloss_content1").html('<h3 style="text-align:left;">Cardio-Treadmill</h3><br>');
+    $(".fatloss_content1").html('<h3 style="text-align:left;">Cardio-Treadmill</h3> <p style="text-align:left;">10 minutes with full intensity</p>');
 
     $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/sGeDGL47O-o"></iframe>');
-    $(".fatloss_content2").html('<h3 style="text-align:left;">Cross Trainer Machine</h3>');
+    $(".fatloss_content2").html('<h3 style="text-align:left;">Cross Trainer Machine</h3> <p style="text-align:left;">08 minutes with full intensity</p>');
 
     $(".fatloss_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/5uB0KaoCF9w"></iframe>');
-    $(".fatloss_content3").html('<h3 style="text-align:left;">Leg raises</h3>');
+    $(".fatloss_content3").html('<h3 style="text-align:left;">Leg raises</h3> <p style="text-align:left;">20-30 reps, for 3 sets</p>');
 
     $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/nKQyGwQJDm4"></iframe>');
-    $(".fatloss_content4").html('<h3 style="text-align:left;">Crunches</h3>');
+    $(".fatloss_content4").html('<h3 style="text-align:left;">Crunches</h3> <p style="text-align:left;">20-30 reps, for 3 sets</p>');
 
     $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/FrFyUbxs1uQ"></iframe>');
-    $(".fatloss_content5").html('<h3 style="text-align:left;">Side Crunches</h3>');
+    $(".fatloss_content5").html('<h3 style="text-align:left;">Side Crunches</h3> <p style="text-align:left;">20-30 reps, for 3 sets</p>');
 
     $(".fatloss_video6").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/07Bcqtib4FM"></iframe>');
-    $(".fatloss_content6").html('<h3 style="text-align:left;">Inclined Dumbell Press or Barbell Press</h3>');
+    $(".fatloss_content6").html('<h3 style="text-align:left;">Inclined Dumbell Press or Barbell Press</h3> <p style="text-align:left;">15 reps for 3 sets</p>');
 
     $(".fatloss_video7").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/ZOwwBk642SI"></iframe>');
-    $(".fatloss_content7").html('<h3 style="text-align:left;">Flat Dumbell Press or barbell press</h3>');
+    $(".fatloss_content7").html('<h3 style="text-align:left;">Flat Dumbell Press or barbell press</h3> <p style="text-align:left;">15 reps for 3 sets</p>');
 
     $(".fatloss_video8").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/Z57CtFmRMxA"></iframe>');
-    $(".fatloss_content8").html('<h3 style="text-align:left;">Machine Fly or Dumbell Fly </h3>');
+    $(".fatloss_content8").html('<h3 style="text-align:left;">Machine Fly or Dumbell Fly </h3> <p style="text-align:left;">15 reps for 3 sets</p>');
   });
 
   $(".fatLossTuesday").click(function () {
+    $(".sundayContent").hide();
+
     $(".cutting_gym_exercise").hide();
     $(".bulking_gym_exercise").hide();
     $(".fatLoss_gym_exercise").show();
     $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dmcV5fpFoUo"></iframe>');
-    $(".fatloss_content1").html('<h3 style="text-align:left;">Cardio-Treadmill</h3><br>');
+    $(".fatloss_content1").html('<h3 style="text-align:left;">Cardio-Treadmill</h3> <p style="text-align:left;">10 minutes with full intensity</p>');
 
     $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/sGeDGL47O-o"></iframe>');
-    $(".fatloss_content2").html('<h3 style="text-align:left;">Cross Trainer Machine</h3>');
+    $(".fatloss_content2").html('<h3 style="text-align:left;">Cross Trainer Machine</h3> <p style="text-align:left;">08 minutes with full intensity</p>');
 
     $(".fatloss_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/5uB0KaoCF9w"></iframe>');
-    $(".fatloss_content3").html('<h3 style="text-align:left;">Leg raises</h3>');
+    $(".fatloss_content3").html('<h3 style="text-align:left;">Leg raises</h3> <p style="text-align:left;">20-30 reps, for 3 sets</p>');
 
     $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/nKQyGwQJDm4"></iframe>');
-    $(".fatloss_content4").html('<h3 style="text-align:left;">Crunches</h3>');
+    $(".fatloss_content4").html('<h3 style="text-align:left;">Crunches</h3> <p style="text-align:left;">20-30 reps, for 3 sets</p>');
 
     $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/FrFyUbxs1uQ"></iframe>');
-    $(".fatloss_content5").html('<h3 style="text-align:left;">Side Crunches</h3>');
+    $(".fatloss_content5").html('<h3 style="text-align:left;">Side Crunches</h3> <p style="text-align:left;">20-30 reps, for 3 sets</p>');
 
     $(".fatloss_video6").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/BdqzYZmL2Bc"></iframe>');
-    $(".fatloss_content6").html('<h3 style="text-align:left;">Skull crusher</h3>');
+    $(".fatloss_content6").html('<h3 style="text-align:left;">Skull crusher</h3> <p style="text-align:left;">15 reps for 3 sets</p>');
 
     $(".fatloss_video7").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/7cy_rXDTF7w"></iframe>');
-    $(".fatloss_content7").html('<h3 style="text-align:left;">Tricep Pushdown</h3>');
+    $(".fatloss_content7").html('<h3 style="text-align:left;">Tricep Pushdown</h3> <p style="text-align:left;">15 reps for 3 sets</p>');
 
     $(".fatloss_video8").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/kDbUNTX-Xts"></iframe>');
-    $(".fatloss_content8").html('<h3 style="text-align:left;">Overhead Tricep</h3>');
+    $(".fatloss_content8").html('<h3 style="text-align:left;">Overhead Tricep</h3> <p style="text-align:left;">15 reps for 3 sets</p>');
 
    
   });
 
   $(".fatLossWednesday").click(function () {
+    $(".sundayContent").hide();
+
     $(".cutting_gym_exercise").hide();
     $(".bulking_gym_exercise").hide();
-    $(".fatLoss_gym_exercise").slideToggle();
-    $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content1").html('<h3 style="text-align:left;">backkkk</h3>');
+    $(".fatLoss_gym_exercise").show();
+    $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dmcV5fpFoUo"></iframe>');
+    $(".fatloss_content1").html('<h3 style="text-align:left;">Cardio-Treadmill</h3> <p style="text-align:left;">10 minutes with full intensity</p>');
 
-    $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+    $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/5uB0KaoCF9w"></iframe>');
+    $(".fatloss_content2").html('<h3 style="text-align:left;">Leg raises</h3> <p style="text-align:left;">10 minutes with full intensity</p>');
 
-    $(".fatloss_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+    $(".fatloss_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/nKQyGwQJDm4"></iframe>');
+    $(".fatloss_content3").html('<h3 style="text-align:left;">Crunches</h3> <p style="text-align:left;">20-30 reps, for 3 sets</p>');
 
-    $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+    $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/Ir8IrbYcM8w"></iframe>');
+    $(".fatloss_content4").html('<h3 style="text-align:left;">Pullups or Hanging</h3> <p style="text-align:left;">hang for 40s-1min for 3 sets</p>');
 
-    $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+    $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/u3gQT2aMVaI"></iframe>');
+    $(".fatloss_content5").html('<h3 style="text-align:left;">Lat pull down</h3> <p style="text-align:left;">15 reps for 3 sets</p>');
+
+    $(".fatloss_video6").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/xQNrFHEMhI4"></iframe>');
+    $(".fatloss_content6").html('<h3 style="text-align:left;">Seated Rowing</h3> <p style="text-align:left;">15 reps for 3 sets</p>');
+
+    $(".fatloss_video7").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/-koP10y1qZI"></iframe>');
+    $(".fatloss_content7").html('<h3 style="text-align:left;">Dumbell Onehand Rowing</h3> <p style="text-align:left;">15 reps for 3 sets</p>');
+
+    $(".fatloss_video8").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/ph3pddpKzzw"></iframe>');
+    $(".fatloss_content8").html('<h3 style="text-align:left;">Hyperextension</h3> <p style="text-align:left;">15 reps for 3 sets</p>');
   });
   $(".fatLossThursday").click(function () {
+    $(".sundayContent").hide();
+
     $(".cutting_gym_exercise").hide();
     $(".bulking_gym_exercise").hide();
-    $(".fatLoss_gym_exercise").slideToggle();
-    $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content1").html('<h3 style="text-align:left;">Biceppppp</h3>');
+    $(".fatLoss_gym_exercise").show();
 
-    $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+    $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dmcV5fpFoUo"></iframe>');
+    $(".fatloss_content1").html('<h3 style="text-align:left;">Cardio-Treadmill</h3> <p style="text-align:left;">10 minutes with full intensity</p>');
 
-    $(".fatloss_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+    $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/5uB0KaoCF9w"></iframe>');
+    $(".fatloss_content2").html('<h3 style="text-align:left;">Leg raises</h3> <p style="text-align:left;">10 minutes with full intensity</p>');
 
-    $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+    $(".fatloss_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/nKQyGwQJDm4"></iframe>');
+    $(".fatloss_content3").html('<h3 style="text-align:left;">Crunches</h3> <p style="text-align:left;">20-30 reps, for 3 sets</p>');
 
-    $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+    $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/Ir8IrbYcM8w"></iframe>');
+    $(".fatloss_content4").html('<h3 style="text-align:left;">Pullups or Hanging</h3> <p style="text-align:left;">hang for 40s-1min for 3 sets</p>');
+
+    $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/u3gQT2aMVaI"></iframe>');
+    $(".fatloss_content5").html('<h3 style="text-align:left;">Lat pull down</h3> <p style="text-align:left;">15 reps for 3 sets</p>');
+
+    $(".fatloss_video6").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/kwG2ipFRgfo"></iframe>');
+    $(".fatloss_content6").html('<h3 style="text-align:left;">Barbell curl</h3>  <p style="text-align:left;">15 reps for 3 sets</p>');
+
+    $(".fatloss_video7").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/ykJmrZ5v0Oo"></iframe>');
+    $(".fatloss_content7").html('<h3 style="text-align:left;">Dumbell Curl</h3>  <p style="text-align:left;">15 reps for 3 sets</p>');
+
+    $(".fatloss_video8").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/WGTCVgCqLqM"></iframe>');
+    $(".fatloss_content8").html('<h3 style="text-align:left;">Hammer Curl</h3>  <p style="text-align:left;">15 reps for 3 sets</p>');
   });
 
   $(".fatLossFriday").click(function () {
+    $(".sundayContent").hide();
+
     $(".cutting_gym_exercise").hide();
     $(".bulking_gym_exercise").hide();
-    $(".fatLoss_gym_exercise").slideToggle();
-    $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content1").html('<h3 style="text-align:left;">shoulder</h3>');
+    $(".fatLoss_gym_exercise").show();
+    $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dmcV5fpFoUo"></iframe>');
+    $(".fatloss_content1").html('<h3 style="text-align:left;">Cardio-Treadmill</h3> <p style="text-align:left;">10 minutes with full intensity</p>');
 
-    $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+    $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/5uB0KaoCF9w"></iframe>');
+    $(".fatloss_content2").html('<h3 style="text-align:left;">Leg raises</h3> <p style="text-align:left;">10 minutes with full intensity</p>');
 
-    $(".fatloss_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+    $(".fatloss_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/nKQyGwQJDm4"></iframe>');
+    $(".fatloss_content3").html('<h3 style="text-align:left;">Crunches</h3> <p style="text-align:left;">20-30 reps, for 3 sets</p>');
 
-    $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+    $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/Ir8IrbYcM8w"></iframe>');
+    $(".fatloss_content4").html('<h3 style="text-align:left;">Pullups or Hanging</h3> <p style="text-align:left;">hang for 40s-1min for 3 sets</p>');
 
-    $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+    $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/u3gQT2aMVaI"></iframe>');
+    $(".fatloss_content5").html('<h3 style="text-align:left;">Lat pull down</h3> <p style="text-align:left;">15 reps for 3 sets</p>');
+
+    $(".fatloss_video6").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/Z5g48LuHB9s"></iframe>');
+    $(".fatloss_content6").html('<h3 style="text-align:left;">Shoulder Press</h3>  <p style="text-align:left;">15 reps for 3 sets</p>');
+
+    $(".fatloss_video7").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/XPPfnSEATJA"></iframe>');
+    $(".fatloss_content7").html('<h3 style="text-align:left;">Side lateral Raises</h3>  <p style="text-align:left;">15 reps for 3 sets</p>');
+
+    $(".fatloss_video8").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/H4s9t4zbjAs"></iframe>');
+    $(".fatloss_content8").html('<h3 style="text-align:left;">Reverse fly</h3>  <p style="text-align:left;">15 reps for 3 sets</p>');
   });
 
 
   $(".fatLossSaturday").click(function () {
+    $(".sundayContent").hide();
+
     $(".cutting_gym_exercise").hide();
     $(".bulking_gym_exercise").hide();
-    $(".fatLoss_gym_exercise").slideToggle();
-    $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content1").html('<h3 style="text-align:left;">Leg</h3>');
+    $(".fatLoss_gym_exercise").show();
+    $(".fatloss_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dmcV5fpFoUo"></iframe>');
+    $(".fatloss_content1").html('<h3 style="text-align:left;">Cardio-Treadmill</h3> <p style="text-align:left;">10 minutes with full intensity</p>');
 
-    $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+    $(".fatloss_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/sGeDGL47O-o"></iframe>');
+    $(".fatloss_content2").html('<h3 style="text-align:left;">Cross Trainer Machine</h3> <p style="text-align:left;">10 minutes with full intensity</p>');
 
-    $(".fatloss_video3").html('<iframe  height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+    $(".fatloss_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/UXJrBgI2RxA"></iframe>');
+    $(".fatloss_content3").html('<h3 style="text-align:left;">leg squad warm up</h3> <p style="text-align:left;">12 reps for 3 sets</p>');
 
-    $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+    $(".fatloss_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/MVMNk0HiTMg"></iframe>');
+    $(".fatloss_content4").html('<h3 style="text-align:left;">Leg barbell squad with weight</h3> <p style="text-align:left;">15 reps for 3 sets</p>');
 
-    $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".fatloss_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+    $(".fatloss_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/U9dnM3dguLc"></iframe>');
+    $(".fatloss_content5").html('<h3 style="text-align:left;">Leg press or extension</h3> <p style="text-align:left;">15 reps for 3 sets</p>');
+
+    $(".fatloss_video6").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/SbSNUXPRkc8"></iframe>');
+    $(".fatloss_content6").html('<h3 style="text-align:left;">Leg hamstring seated or lying</h3> <p style="text-align:left;">15 reps for 3 sets</p>');
+
+    $(".fatloss_video7").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/PjrESYsj5Yw"></iframe>');
+    $(".fatloss_content7").html('<h3 style="text-align:left;">Leg streaching</h3> ');
+
+    $(".fatloss_video8").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/PjrESYsj5Yw"></iframe>');
+    $(".fatloss_content8").html('<h3 style="text-align:left;">Leg streaching</h3>');
   });
 
 
@@ -657,7 +807,7 @@
 //cutting
    
 $(".cuttingMonday").click(function () {
-    $(".cutting_gym_exercise").slideToggle();
+    $(".cutting_gym_exercise").show();
     $(".bulking_gym_exercise").hide();
     $(".fatLoss_gym_exercise").hide();
     $(".cutting_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
@@ -677,7 +827,7 @@ $(".cuttingMonday").click(function () {
   });
 
   $(".cuttingTuesday").click(function () {
-    $(".cutting_gym_exercise").slideToggle();
+    $(".cutting_gym_exercise").show();
     $(".bulking_gym_exercise").hide();
     $(".fatLoss_gym_exercise").hide() ;
     $(".cutting_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
@@ -697,7 +847,7 @@ $(".cuttingMonday").click(function () {
   });
 
   $(".cuttingWednesday").click(function () {
-    $(".cutting_gym_exercise").slideToggle();
+    $(".cutting_gym_exercise").show();
     $(".bulking_gym_exercise").hide();
     $(".fatLoss_gym_exercise").hide() ;
     $(".cutting_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
@@ -716,7 +866,7 @@ $(".cuttingMonday").click(function () {
     $(".cutting_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
   });
   $(".cuttingThursday").click(function () {
-    $(".cutting_gym_exercise").slideToggle();
+    $(".cutting_gym_exercise").show();
     $(".bulking_gym_exercise").hide();
     $(".fatLoss_gym_exercise").hide() ;
     $(".cutting_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
@@ -736,7 +886,7 @@ $(".cuttingMonday").click(function () {
   });
 
   $(".cuttingFriday").click(function(){
-    $(".cutting_gym_exercise").slideToggle();
+    $(".cutting_gym_exercise").show();
     $(".bulking_gym_exercise").hide();
     $(".fatLoss_gym_exercise").hide() ;
     $(".cutting_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
@@ -757,7 +907,7 @@ $(".cuttingMonday").click(function () {
 
 
   $(".cuttingSaturday").click(function () {
-    $(".cutting_gym_exercise").slideToggle();
+    $(".cutting_gym_exercise").show();
     $(".bulking_gym_exercise").hide();
     $(".fatLoss_gym_exercise").hide() ;
     $(".cutting_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
@@ -784,121 +934,228 @@ $(".cuttingMonday").click(function () {
 //Bulking
    
 $(".bulkingMonday").click(function () {
+  $(".sundayContent").hide();
+
     $(".cutting_gym_exercise").hide();
-    $(".bulking_gym_exercise").slideToggle();
+    $(".bulking_gym_exercise").show();
     $(".fatLoss_gym_exercise").hide();
-    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content1").html('<h3 style="text-align:left;">Bulk-Cardio</h3>');
+    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/Ff7MWn85wEw"></iframe>');
+    $(".bulking_content1").html('<h3 style="text-align:left;">Dynamic streaching and Warm up Cardio</h3> <p style="text-align:left;">8mins warmup</p>');
 
-    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content2").html('<h3 style="text-align:left;">Incline</h3>');
+    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/07Bcqtib4FM"></iframe>');
+    $(".bulking_content2").html('<h3 style="text-align:left;">Inclined Dumbell press</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content3").html('<h3 style="text-align:left;">Declined</h3>');
+    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dtNXLavPFo0"></iframe>');
+    $(".bulking_content3").html('<h3 style="text-align:left;">Inclined barbell press</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content4").html('<h3 style="text-align:left;">fly</h3>');
+    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/rT7DgCr-3pg"></iframe>');
+    $(".bulking_content4").html('<h3 style="text-align:left;">Flat dumbell or barbell press</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content5").html('<h3 style="text-align:left;">cable</h3>');
+    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/bDaIL_zKbGs"></iframe>');
+    $(".bulking_content5").html('<h3 style="text-align:left;">Machine Fly or Dumbell Fly</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video6").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/XPPfnSEATJA"></iframe>');
+    $(".bulking_content6").html('<h3 style="text-align:left;">Shoulder Lateral Raise</h3> <p style="text-align:left;">10-15 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video7").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/XvwHwK3rksI"></iframe>');
+    $(".bulking_content7").html('<h3 style="text-align:left;">Bench Tricep Press</h3> <p style="text-align:left;">10 to 12 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video8").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/BdqzYZmL2Bc"></iframe>');
+    $(".bulking_content8").html('<h3 style="text-align:left;">Skull crusher</h3> <p style="text-align:left;">10 to 12 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video9").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/7cy_rXDTF7w"></iframe>');
+    $(".bulking_content9").html('<h3 style="text-align:left;">Tricep Push Down</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
   });
 
   $(".bulkingTuesday").click(function () {
+    $(".sundayContent").hide();
+
     $(".cutting_gym_exercise").hide();
-    $(".bulking_gym_exercise").slideToggle();
+    $(".bulking_gym_exercise").show();
     $(".fatLoss_gym_exercise").hide();
-    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content1").html('<h3 style="text-align:left;">triceppp</h3>');
 
-    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/Ff7MWn85wEw"></iframe>');
+    $(".bulking_content1").html('<h3 style="text-align:left;">Dynamic streaching and Warm up Cardio</h3> <p style="text-align:left;">8mins warmup</p>');
 
-    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/DqgAQWxBTP0"></iframe>');
+    $(".bulking_content2").html('<h3 style="text-align:left;">Barbell Bent over Rowing</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/GZbfZ033f74"></iframe>');
+    $(".bulking_content3").html('<h3 style="text-align:left;">Seated Rowing</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/JGeRYIZdojU"></iframe>');
+    $(".bulking_content4").html('<h3 style="text-align:left;">Lat pull down</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/8np3vKDBJfc"></iframe>');
+    $(".bulking_content5").html('<h3 style="text-align:left;">Stif Leg Deadlift</h3> <p style="text-align:left;">6 to 8 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video6").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/igJgh0kLt4"></iframe>');
+    $(".bulking_content6").html('<h3 style="text-align:left;">Dumbell or machine Reverse Fly</h3> <p style="text-align:left;"> 15 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video7").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/XZ4uBdekQqA"></iframe>');
+    $(".bulking_content7").html('<h3 style="text-align:left;">Straight Bar Barbell Curl</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video8").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/TouYMA3-ua4"></iframe>');
+    $(".bulking_content8").html('<h3 style="text-align:left;">Dumble Curl or Pitcher Curl</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video9").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/XyQl4Fbj2Bw"></iframe>');
+    $(".bulking_content9").html('<h3 style="text-align:left;">Hammer Curl</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
   });
 
   $(".bulkingWednesday").click(function () {
+    $(".sundayContent").hide();
+
     $(".cutting_gym_exercise").hide();
-    $(".bulking_gym_exercise").slideToggle();
+    $(".bulking_gym_exercise").show();
     $(".fatLoss_gym_exercise").hide();
-    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content1").html('<h3 style="text-align:left;">backkkk</h3>');
+    
+    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/KBQBbTSBWVs"></iframe>');
+    $(".bulking_content1").html('<h3 style="text-align:left;">Lower Body Warm Up</h3> <p style="text-align:left;">10 - 15 mins</p>');
 
-    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/SeTTx-suorU"></iframe>');
+    $(".bulking_content2").html('<h3 style="text-align:left;">Leg Squad</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/AlWDSu7_Zuc"></iframe>');
+    $(".bulking_content3").html('<h3 style="text-align:left;">Leg Press</h3> <p style="text-align:left;">10 to 12 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/681vzw6aXZo"></iframe>');
+    $(".bulking_content4").html('<h3 style="text-align:left;">Leg Extension</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/yqjBaHKab9U"></iframe>');
+    $(".bulking_content5").html('<h3 style="text-align:left;">Sumo Squad with Dumbells</h3> <p style="text-align:left;">12 (heavy weight as much as possible)</p>');
+
+    $(".bulking_video7").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/0JfYxMRsUCQ"></iframe>');
+    $(".bulking_content7").html('<h3 style="text-align:left;">Shoulder Press Barbell or Dumbell</h3> <p style="text-align:left;">10 to 12 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video8").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/ugPIPY7j-GM"></iframe>');
+    $(".bulking_content8").html('<h3 style="text-align:left;">Shoulder Front Raises</h3> <p style="text-align:left;">10 to 12 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video6").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/HCsmihyNEss"></iframe>');
+    $(".bulking_content6").html('<h3 style="text-align:left;">Hip Thrust for glutes</h3> <p style="text-align:left;">10 reps </p>');
+
+    $(".bulking_video9").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/wrIZ3JxTZJY"></iframe>');
+    $(".bulking_content9").html('<h3 style="text-align:left;">Post Workout Streaching</h3> <p style="text-align:left;">4 - 6 mins</p>');
   });
   $(".bulkingThursday").click(function () {
+    $(".sundayContent").hide();
+
     $(".cutting_gym_exercise").hide();
-    $(".bulking_gym_exercise").slideToggle();
+    $(".bulking_gym_exercise").show();
     $(".fatLoss_gym_exercise").hide();
-    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content1").html('<h3 style="text-align:left;">Biceppppp</h3>');
+    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/Ff7MWn85wEw"></iframe>');
+    $(".bulking_content1").html('<h3 style="text-align:left;">Dynamic streaching and Warm up Cardio</h3> <p style="text-align:left;">8mins warmup</p>');
 
-    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content2").html('<h3 style="text-align:left;">Biceppppp</h3>');
-    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/07Bcqtib4FM"></iframe>');
+    $(".bulking_content2").html('<h3 style="text-align:left;">Inclined Dumbell press</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dtNXLavPFo0"></iframe>');
+    $(".bulking_content3").html('<h3 style="text-align:left;">Inclined barbell press</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/rT7DgCr-3pg"></iframe>');
+    $(".bulking_content4").html('<h3 style="text-align:left;">Flat dumbell or barbell press</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/bDaIL_zKbGs"></iframe>');
+    $(".bulking_content5").html('<h3 style="text-align:left;">Machine Fly or Dumbell Fly</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video6").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/XPPfnSEATJA"></iframe>');
+    $(".bulking_content6").html('<h3 style="text-align:left;">Shoulder Lateral Raise</h3> <p style="text-align:left;">10-15 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video7").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/XvwHwK3rksI"></iframe>');
+    $(".bulking_content7").html('<h3 style="text-align:left;">Bench Tricep Press</h3> <p style="text-align:left;">10 to 12 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video8").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/qxajRdVVEFo"></iframe>');
+    $(".bulking_content8").html('<h3 style="text-align:left;">Over Head Tricep</h3> <p style="text-align:left;">10 to 12 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video9").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/7cy_rXDTF7w"></iframe>');
+    $(".bulking_content9").html('<h3 style="text-align:left;">Tricep Push Down</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
   });
 
   $(".bulkingFriday").click(function(){
+    $(".sundayContent").hide();
+
     $(".cutting_gym_exercise").hide();
-    $(".bulking_gym_exercise").slideToggle();
+    $(".bulking_gym_exercise").show();
     $(".fatLoss_gym_exercise").hide();
-    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content1").html('<h3 style="text-align:left;">shoulder</h3>');
+    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/Ff7MWn85wEw"></iframe>');
+    $(".bulking_content1").html('<h3 style="text-align:left;">Dynamic streaching and Warm up Cardio</h3> <p style="text-align:left;">8mins warmup</p>');
 
-    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/DqgAQWxBTP0"></iframe>');
+    $(".bulking_content2").html('<h3 style="text-align:left;">Barbell Bent over Rowing</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/GZbfZ033f74"></iframe>');
+    $(".bulking_content3").html('<h3 style="text-align:left;">Seated Rowing</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/JGeRYIZdojU"></iframe>');
+    $(".bulking_content4").html('<h3 style="text-align:left;">Lat pull down</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dFzUjzfih7k"></iframe>');
+    $(".bulking_content5").html('<h3 style="text-align:left;">Single arm Dumbell Row</h3> <p style="text-align:left;">6 to 8 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video6").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/igJgh0kLt4"></iframe>');
+    $(".bulking_content6").html('<h3 style="text-align:left;">Dumbell or machine Reverse Fly</h3> <p style="text-align:left;"> 15 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video8").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/XZ4uBdekQqA"></iframe>');
+    $(".bulking_content8").html('<h3 style="text-align:left;">Straight Bar Barbell Curl</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video7").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/McDrW7uI4JI"></iframe>');
+    $(".bulking_content7").html('<h3 style="text-align:left;">Face Pull</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video9").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/XyQl4Fbj2Bw"></iframe>');
+    $(".bulking_content9").html('<h3 style="text-align:left;">Hammer Curl</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
   });
 
 
   $(".bulkingSaturday").click(function () {
+    $(".sundayContent").hide();
+
     $(".cutting_gym_exercise").hide();
-    $(".bulking_gym_exercise").slideToggle();
+    $(".bulking_gym_exercise").show();
     $(".fatLoss_gym_exercise").hide();
-    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content1").html('<h3 style="text-align:left;">Leg</h3>');
+    $(".bulking_video1").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/KBQBbTSBWVs"></iframe>');
+    $(".bulking_content1").html('<h3 style="text-align:left;">Lower Body Warm Up</h3> <p style="text-align:left;">10 - 15 mins</p>');
 
-    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content2").html('<h3 style="text-align:left;">Barbal Row</h3>');
+    $(".bulking_video2").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/SeTTx-suorU"></iframe>');
+    $(".bulking_content2").html('<h3 style="text-align:left;">Leg Squad</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content3").html('<h3 style="text-align:left;">Seated Row</h3>');
+    $(".bulking_video3").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/AlWDSu7_Zuc"></iframe>');
+    $(".bulking_content3").html('<h3 style="text-align:left;">Leg Press</h3> <p style="text-align:left;">12 to 16 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content4").html('<h3 style="text-align:left;">Lat pull down</h3>');
+    $(".bulking_video4").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/SbSNUXPRkc8"></iframe>');
+    $(".bulking_content4").html('<h3 style="text-align:left;">Hamstring Extension seated or lying</h3> <p style="text-align:left;">10 to 12 reps(heavy weight as much as possible)</p>');
 
-    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/dEXnI4X6Rtg"></iframe>');
-    $(".bulking_content5").html('<h3 style="text-align:left;">Deadlift</h3>');
+    $(".bulking_video5").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/iQVLxHgqsv8"></iframe>');
+    $(".bulking_content5").html('<h3 style="text-align:left;">Dumbell lift Hamstring</h3> <p style="text-align:left;">10 to 12 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video7").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/0JfYxMRsUCQ"></iframe>');
+    $(".bulking_content7").html('<h3 style="text-align:left;">Shoulder Press Barbell or Dumbell</h3> <p style="text-align:left;">10 to 12 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video8").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/ugPIPY7j-GM"></iframe>');
+    $(".bulking_content8").html('<h3 style="text-align:left;">Shoulder Front Raises</h3> <p style="text-align:left;">10 to 12 reps(heavy weight as much as possible)</p>');
+
+    $(".bulking_video6").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/HCsmihyNEss"></iframe>');
+    $(".bulking_content6").html('<h3 style="text-align:left;">Hip Thrust for glutes</h3> <p style="text-align:left;">10 reps </p>');
+
+    $(".bulking_video9").html('<iframe height="250" width="450" src="https://www.youtube.com/embed/wrIZ3JxTZJY"></iframe>');
+    $(".bulking_content9").html('<h3 style="text-align:left;">Post Workout Streaching</h3> <p style="text-align:left;">4 - 6 mins</p>');
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
