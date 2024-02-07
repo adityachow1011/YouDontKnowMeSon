@@ -375,7 +375,7 @@ footer small {
 
 @media (max-width: 950px) {
 	.project-container {
-		margin-top: -44px;
+		margin-top: -9px;
 		flex-direction: column;
 		max-width: 450px;
 		padding: 1.5em;
